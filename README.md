@@ -2,7 +2,7 @@
 
 This is my first project to learn how to do coding.
 
-## Features
+## Features of this pretty projectt
 
 * online
 * offline
