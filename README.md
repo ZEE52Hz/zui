@@ -6,7 +6,7 @@ This is my first project to learn how to do coding.
 
 * online
 * offline
-* Feature 3
+* suport phone and windows version both
 
 ## Installation
 
