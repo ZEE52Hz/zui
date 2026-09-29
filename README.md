@@ -1,11 +1,11 @@
 # First Project
 
-A short description of what this project does and why it exists.
+This is my first project to learn how to do coding.
 
 ## Features
 
-* Feature 1
-* Feature 2
+* online
+* offline
 * Feature 3
 
 ## Installation
