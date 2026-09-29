@@ -1,4 +1,4 @@
-# Project Name
+# First Project
 
 A short description of what this project does and why it exists.
 
