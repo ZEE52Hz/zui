@@ -1,5 +1,256 @@
-body{
-    background-color: #071925;
-    color: aliceblue;
-    font-family: outfit;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== BASE STYLES (PHONE) — already done for you ===== */
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #07140d;
+  color: #ecfdf3;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+.num,
+.check-value,
+.coach,
+.brand-bar,
+.side-value {
+  font-family: "Teko", sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.brand-bar {
+  background-color: #16a34a;
+  color: #052e16;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px 16px;
+}
+
+.page {
+  padding: 24px 16px 40px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  color: #4ade80;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  line-height: 0.9;
+  margin-bottom: 12px;
+}
+
+.tagline {
+  color: #b7cfc0;
+  max-width: 420px;
+  font-size: 15px;
+}
+
+.hero-side {
+  background-color: #113221;
+  border: 1px solid #1f6b3f;
+  padding: 18px;
+}
+
+.side-label {
+  color: #86efac;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.side-value {
+  font-size: 42px;
+  color: #4ade80;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.side-text {
+  color: #c5ddce;
+  font-size: 14px;
+}
+
+.why {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.why-card {
+  background-color: #0c1f15;
+  padding: 16px 18px;
+  border-bottom: 3px solid #22c55e;
+}
+
+.why-card h2 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.why-card p {
+  color: #b7cfc0;
+  font-size: 14px;
+}
+
+.section-head {
+  margin-bottom: 14px;
+}
+
+.section-head h2 {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.section-head p {
+  color: #86efac;
+  font-size: 14px;
+}
+
+.sessions {
+  margin-bottom: 32px;
+}
+
+.session-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* phone: 1 column */
+  gap: 14px;
+}
+
+.session {
+  background-color: #0c1f15;
+  padding: 16px;
+  border: 1px solid #1a4d32;
+}
+
+.session-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.session h3 {
+  font-size: 28px;
+}
+
+.num {
+  color: #22c55e;
+  font-size: 28px;
+}
+
+.session p {
+  color: #b7cfc0;
+  font-size: 14px;
+}
+
+.checks {
+  margin-bottom: 32px;
+}
+
+.check-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* phone: 1 column */
+  gap: 12px;
+}
+
+.check {
+  background-color: #14532d;
+  padding: 18px 12px;
+  text-align: center;
+}
+
+.check-value {
+  font-size: 44px;
+  color: #bbf7d0;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.check-label {
+  font-size: 13px;
+  color: #dcfce7;
+}
+
+.footer {
+  text-align: left;
+  padding-top: 16px;
+  border-top: 1px solid #1f6b3f;
+}
+
+.footer p {
+  color: #c5ddce;
+}
+
+.coach {
+  margin-top: 6px;
+  color: #4ade80;
+  font-size: 22px;
+}
+
+/* ===== YOUR TURN: add media queries below ===== */
+
+/*
+  Goal: make 52hz responsive.
+
+  1. At 600px and up (tablet):
+     - .hero → 2 columns (main + side card)
+     - .why → 2 columns
+     - .session-grid → 2 columns
+     - .check-grid → 2 columns
+     - hero h1 around 72px
+
+  2. At 900px and up (desktop):
+     - .check-grid → 4 columns
+     - hero h1 around 88px
+     - section-head h2 a bit bigger
+
+  Hint:
+  @media (min-width: 600px) {
+    ...
+  }
+*/
+
+@media (min-width: 600px) {
+  /* write your tablet styles here */
+ .hero{
+  grid-template-columns: 1fr 1fr;
+ }
+ .why{
+   grid-template-columns: 1fr 1fr;
+ }
+ .session-grid{
+  grid-template-columns: repeat(2, 1fr);
+ }
+ .check-grid{
+  grid-template-columns: repeat(4, 1fr);
+ }
+ .page{
+  padding: 28px;
+ }
+}
+
+@media (min-width: 900px) {
+  /* write your desktop styles here */
 }

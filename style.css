@@ -22,7 +22,7 @@ body{
   margin-top: 50px;
   
 }
-.home, .homework, .p3, .p4, .p5, .p6, .session, .project  {
+  a {
   color: #e2dcec;
   background: linear-gradient(
     135deg,
